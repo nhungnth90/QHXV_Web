@@ -1,0 +1,46 @@
+/* ====================================
+   LAYOUT
+   ==================================== */
+
+.has-gradient {
+	position: relative;
+	&:after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(to top, #000, rgba(255,255,255,0) 45%);
+    }
+}
+.has-border {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.has-margin {
+    margin-bottom: 20px;
+}
+.topbanner {
+	text-align: center;
+	margin-bottom: 20px;
+    img {
+        max-width: 100%;
+    }
+}
+.banner {
+	text-align: center;
+	padding: 10px;
+	background: $secondary;
+	margin-bottom: 20px;
+    &-label {
+        font-size: 11px;
+        font-size: 1.1rem;
+        color: #999;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    img {
+        max-width: 100%;
+    }
+}

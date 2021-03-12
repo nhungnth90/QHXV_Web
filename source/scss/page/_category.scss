@@ -1,0 +1,116 @@
+/* ====================================
+   CATEGORY
+   ==================================== */
+
+.breadcrumbs {
+	margin-bottom: 35px;
+	&:after {
+		content: "";
+	    display: block;
+	    width: 100%;
+	    height: 1px;
+	    background: #e9e9e9;
+	    margin-top: -20px;
+	}
+	* {
+	    display: inline-block;
+	}
+	h1, h2, h3, h4, h5 {
+		vertical-align: super;
+	}
+	&__headline {
+		font-family: $font-family-serif;
+		background: #fff;
+		padding-right: 35px;
+		position: relative;
+		&:after {
+			content: "";
+		    display: block;
+		    width: 6px;
+		    height: 6px;
+		    background: #e9e9e9;
+		    position: absolute;
+		    right: 15px;
+		    top: 19px;
+		    border-radius: 50%;
+		}
+		.headline {
+			font-size: 30px;
+		    line-height: 41px;
+		    color: $primary;
+		    text-transform: uppercase;
+		}
+		.child {
+			font-size: 18px;
+			color: #666;
+			vertical-align: text-bottom;
+			&:before {
+				content: "/";
+				display: inline-block;
+    			padding: 0 10px 0 8px;
+			}
+		}
+	}
+	&__subcate {
+	    background: #fff;
+	    float: right;
+	    padding-left: 15px;
+	    margin-top: 12px;
+	    position: relative;
+	    &:before {
+			content: "";
+		    display: block;
+		    width: 6px;
+		    height: 6px;
+		    background: #e9e9e9;
+		    position: absolute;
+		    left: 15px;
+		    top: 6px;
+		    border-radius: 50%;
+		}
+	    a {
+	        color: #888;
+	        margin-left: 20px;
+	        &:hover {
+	            color: #888;
+	            text-decoration: underline;
+	        }
+	    }
+	}
+}
+.spotlight {
+	.focus {
+		width: 50%;
+		display: inline-block;
+		margin-right: 16px;
+		.story__title {
+			font-size: 30px;
+			line-height: 41px;
+			padding: 10px 0 8px 0;
+			i {
+				font-size: inherit;
+			}
+		}
+		.summary {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	.feature {
+		width: 50%;
+	    display: inline-block;
+	    vertical-align: top;
+	    .story {
+	    	margin-bottom: 18px;
+	    }
+	    .story__thumb {
+	    	height: 152px;
+	    	@include breakpoint(0,980px) {
+	            height: 145px;
+	        }
+			@include breakpoint(1280px) {
+	            height: 175px;
+	        }
+	    }
+	}
+}
