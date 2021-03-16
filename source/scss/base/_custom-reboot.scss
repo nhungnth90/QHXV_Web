@@ -3,7 +3,7 @@
    ==================================== */
 
 html {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 // Body
@@ -14,13 +14,13 @@ html {
 //    the `inherit` value on things like `<th>` elements.
 
 body {
-  margin: 0;
-  font-family: $font-family-base;
-  font-size: 14px;
-  font-weight: $font-weight-base;
-  line-height: $line-height-base;
-  color: #333;
-  background-color: #fff;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: #333;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 //
@@ -32,10 +32,16 @@ body {
 // By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
 // margin for easier control within type scales as it avoids margin collapsing.
 // stylelint-disable selector-list-comma-newline-after
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    margin-bottom: 0;
 }
+
 // stylelint-enable selector-list-comma-newline-after
 
 // Reset margins on paragraphs
@@ -43,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 // Similarly, the top margin on `<p>`s get reset. However, we also reset the
 // bottom margin to use `rem` units instead of `em`.
 p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 // Abbreviations
@@ -65,13 +71,14 @@ dl {
 // Links
 //
 a {
-	@include transition();
-  color: #333;
-  display: block;
-  &:hover {
-    color: $primary;
+    @include transition();
+    color: #333;
     text-decoration: none;
-  }
+    display: block;
+
+    &:hover {
+        color: $primary;
+    }
 }
 
 //
@@ -79,5 +86,5 @@ a {
 //
 
 label {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }

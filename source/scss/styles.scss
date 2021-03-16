@@ -7,32 +7,26 @@
    ==================================== */
 
 @import "base/custom-variables";
-@import "!framework/bootstrap-4.3.1/bootstrap";
+@import "!framework/bootstrap-4.1.3";
 
 /* utilities */
-@import "mixin/mixins";
+// @import "mixin/mixins";
 
 /* base file */
 @import "base/custom-reboot";
 @import "base/fonts";
 
 /* layout */
-@import "layout/layout";
-@import "layout/grid";
+// @import "layout/layout";
 @import "layout/header";
-@import "layout/footer";
+// @import "layout/footer";
 
 /* component */
-@import "component/region";
-@import "component/story";
-@import "component/buttons";
-@import "component/icons";
-@import "component/back2top";
+// @import "component/region";
+// @import "component/story";
 
 /* pages */
-@import "page/index";
-@import "page/category";
-@import "page/details";
+// @import "page/details";
 
 /* font */
-@import "!framework/fontawesome.min.css";
+@import "!framework/FontAwesome.Pro.5.15.2/fontawesome.min.css";

@@ -17,18 +17,18 @@ var sourcemaps = require('gulp-sourcemaps');
 var paths = {
     project_name: "QHXV",
     js_dev: './source/js',
-    js: './build/Jscripts',
+    js: './build/js',
     scss_dev: './source/scss',
-    css: './build/App_Themes/css',
-    html_dev: "./source/demo-html",
+    css: './build/styles/css',
+    html_dev: "./source/html",
     html: "./build/html",
     plugins_dev: "./source/plugins",
     plugins: "./build/plugins",
     root_folder: "./build",
     fonts_dev: "./source/fonts",
-    fonts: "./build/App_Themes/fonts",
+    fonts: "./build/styles/fonts",
     img_dev: "./source/img",
-    img: "./build/App_Themes/img"
+    img: "./build/styles/img"
 };
 
 // scripts task
@@ -36,12 +36,12 @@ gulp.task('scripts', function() {
     return gulp.src([
             // import plugin
             // paths.js_dev + '/vendor/modernizr.js',
-            paths.js_dev + '/vendor/jquery.min.js',
+            // paths.js_dev + '/vendor/jquery.min.js',
             // paths.js_dev + '/vendor/jquery-migrate.js',
-            paths.js_dev + '/vendor/bootstrap-4.3.1/dist/js/bootstrap.min.js',
+            paths.js_dev + '/vendor/bootstrap-4.1.3.min.js'
+            // paths.js_dev + '/vendor/sticky-master/jquery.sticky.js'
+            // paths.js_dev + '/vendor/jQuery-slimScroll-1.3.8/jquery.slimscroll.js',
             // paths.js_dev + '/vendor/jquery.bxslider.js'
-            // paths.js_dev + '/vendor/SidebarTransitions/js/classie.js',
-            paths.js_dev + '/vendor/sticky-master/jquery.sticky.js'
             // paths.js_dev + '/vendor/jquery.matchHeight-min.js'
             // paths.js_dev + '/vendor/jquery.scrollbar.min.js'
             // end import plugin

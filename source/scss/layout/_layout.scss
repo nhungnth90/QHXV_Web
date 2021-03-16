@@ -2,45 +2,165 @@
    LAYOUT
    ==================================== */
 
-.has-gradient {
-	position: relative;
-	&:after {
-        width: 100%;
-        height: 100%;
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background: linear-gradient(to top, #000, rgba(255,255,255,0) 45%);
+.l-grid {
+	@include clearfix();
+	width: 1000px;
+	margin: auto;
+}
+.l-content {
+	width: 680px;
+	float: left;
+	padding-right: 20px;
+	border-right: 1px solid #eee;
+}
+.cols-2 {
+	font-size: 0;
+	margin-left: -10px;
+    margin-right: -10px;
+    >* {
+    	width: 50%;
+	    display: inline-block;
+	    vertical-align: top;
+	    padding: 0 10px;
     }
 }
-.has-border {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+.cols-3 {
+	font-size: 0;
+	margin-left: -11px;
+    margin-right: -11px;
+    >* {
+    	width: 33.33%;
+	    display: inline-block;
+	    vertical-align: top;
+	    padding: 0 11px;
+    }
 }
-.has-margin {
-    margin-bottom: 20px;
+.cols-4 {
+	font-size: 0;
+	margin-left: -10px;
+    margin-right: -10px;
+    >* {
+    	width: 25%;
+	    display: inline-block;
+	    vertical-align: top;
+	    padding: 0 10px;
+    }
 }
-.topbanner {
-	text-align: center;
+
+.site-content {
 	margin-bottom: 20px;
-    img {
-        max-width: 100%;
+}
+.sidebar {
+	width: 300px;
+    float: right;
+    .zone--list .zone__heading {
+		margin: 0;
+		.heading {
+			border: none;
+		}
     }
 }
 .banner {
 	text-align: center;
-	padding: 10px;
-	background: $secondary;
 	margin-bottom: 20px;
-    &-label {
-        font-size: 11px;
-        font-size: 1.1rem;
-        color: #999;
+}
+.has-border-left {
+	border-left: 1px solid;
+	&.yellow {
+		border-color: #f4d747;
+	}
+	&.orange {
+		border-color: #f26d35;
+	}
+	&.purple {
+		border-color: #9164a9;
+	}
+	&.turquoise {
+		border-color: #2cbaa0;
+	}
+	&.lime {
+		border-color: #ccdc3d;
+	}
+}
+
+// Breadcrumbs
+.breadcrumbs {
+    @include clearfix();
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    * {
+    	font-family: $font-family-special;
+        font-size: 16px;
+        font-size: 1.6rem;
+    	display: inline-block;
+    }
+    &__headline {
+    	color: $primary;
+        font-weight: 600;
         text-transform: uppercase;
-        margin-bottom: 5px;
     }
-    img {
-        max-width: 100%;
+    &__child {
+    	color: #333;
+    	&:before {
+    		content: "/";
+    		padding: 0 8px 0 5px;
+    	}
     }
+}
+
+
+// Modal
+.modal {
+	&-content {
+		border-radius: 4px;
+	}
+	&-header, &-footer {
+		padding: 15px 20px;
+	}
+	&-title {
+		font-size: 20px;
+	}
+	&-body {
+		padding: 20px 20px 15px;
+	}
+	.close {
+		font-size: 24px;
+	}
+	.title {
+		font-family: $font-family-special;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+	}
+	.form-group {
+		margin-bottom: 20px;
+		label {
+			font-size: 12px;
+			color: #555;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+	input.form-control {
+		font-size: 14px;
+		color: #333;
+		height: 38px;
+		border-radius: 4px;
+	}
+	.note {
+		font-size: 12px;
+		color: red;
+		margin-top: 5px;
+	}
+	.btn {
+		font-size: 12px;
+		padding: 6px 10px;
+	    border: none;
+	    border-radius: 0;
+	    box-shadow: none;
+	}
 }

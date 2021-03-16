@@ -2,9 +2,9 @@
  * Mixins
  * ==================================== */
 
+
 /* Media queries
  * ==================================== */
-
 @mixin breakpoint($min: 0, $max: 0) {
     $type: type-of($min);
     @if $type==string {
@@ -52,25 +52,87 @@
 }
 
 
-/* Layout mixin
+/* Media screen mixin  */
+
+@mixin respond-to-xs() {
+    @media (max-width: $screen-xs-max) {
+        @content;
+    }
+}
+
+@mixin respond-to-sm() {
+    @media (min-width: $screen-sm-min) {
+        @content;
+    }
+}
+
+@mixin respond-to-sm-only() {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        @content;
+    }
+}
+
+@mixin respond-to-md() {
+    @media (min-width: $screen-md-min) {
+        @content;
+    }
+}
+
+@mixin respond-to-md-only() {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        @content;
+    }
+}
+
+@mixin respond-to-lg() {
+    @media (min-width: $screen-lg-min) {
+        @content;
+    }
+}
+
+
+/* Font mixin
  * ==================================== */
 
-@mixin transition() {
-    /*!*/
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+// variables-font-legacy
+// The exist to provide backwards compatibility for 
+// current things that use font variables. You should 
+// NOT be using these for new SCSS code.
+// legacy font weight vars
+// mixins-typography
+@mixin font-size ($font-size, $line-height) {
+    $new-size: ($font-size / 10);
+    $new-line-height: ($line-height / 10);
+    font-size: ($font-size + px);
+    font-size: ($new-size + rem);
+    line-height: ($line-height + px);
+    line-height: ($new-line-height + rem);
 }
+
+@mixin font-family ($font-name, $font-weight: $normal, $font-style: normal) {
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-family: $font-name;
+}
+
+// shorthand for font-size / line-height / font-family / font-weight
+@mixin font ($font-family, $font-size, $line-height, $font-weight: $normal, $font-style: normal) {
+    @include font-size($font-size, $line-height);
+    @include font-family($font-family, $font-weight, $font-style);
+}
+
+
+/* Layout mixin
+ * ==================================== */
 
 @mixin thumb() {
     /*!*/
     display: block;
     overflow: hidden;
     position: relative;
+    background: #ddd;
     &:hover {
-        opacity: 0.85;
+        opacity: .85;
     }
     img {
         width: 100%;

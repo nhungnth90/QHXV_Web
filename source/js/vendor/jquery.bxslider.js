@@ -1116,10 +1116,6 @@
           slider.pointerId = orig.pointerId;
           slider.viewport.get(0).setPointerCapture(slider.pointerId);
         }
-        // if (e.target.setPointerCapture) {
-        //   slider.pointerId = orig.pointerId;
-        //   e.target.setPointerCapture(slider.pointerId);
-        // }
         // bind a "touchmove" event to the viewport
         slider.viewport.bind('touchmove MSPointerMove pointermove', onTouchMove);
         // bind a "touchend" event to the viewport
