@@ -120,21 +120,3 @@
     @include font-size($font-size, $line-height);
     @include font-family($font-family, $font-weight, $font-style);
 }
-
-
-/* Layout mixin
- * ==================================== */
-
-@mixin thumb() {
-    /*!*/
-    display: block;
-    overflow: hidden;
-    position: relative;
-    background: #ddd;
-    &:hover {
-        opacity: .85;
-    }
-    img {
-        width: 100%;
-    }
-}

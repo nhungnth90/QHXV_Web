@@ -1,7 +1,3 @@
-// Variable overrides come first (without !default). Bootstrap default variables
-// come second because they use !default (they won't get set if set already) and
-// some of them depend on our overrides.
-
 /* ====================================
    = BOOTSTARP 4.X + REPLACE VARIABLE =
    ==================================== */
@@ -17,16 +13,22 @@
 @import "base/fonts";
 
 /* layout */
-// @import "layout/layout";
+@import "layout/layout";
 @import "layout/header";
 // @import "layout/footer";
 
 /* component */
-// @import "component/region";
-// @import "component/story";
+@import "component/region";
+@import "component/story";
+@import "component/icons";
+@import "component/buttons";
 
 /* pages */
 // @import "page/details";
+
+/* plugins */
+@import "plugins/slick.css";
+@import "plugins/slick-theme.css";
 
 /* font */
 @import "!framework/FontAwesome.Pro.5.15.2/fontawesome.min.css";

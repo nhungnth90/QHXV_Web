@@ -2,6 +2,30 @@
    Jscripts
    ==================================== */
 
+/*--- Slick ---*/
+$(document).ready(function(){
+    // Thong Tin Toan Quoc
+    $('.slick-news').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+
+    // Thong Tin Dia Phuong
+    $('.slick-location').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+});
+
+
 /*--- Toggle ---*/
     // Search
     // $('.search').on('click', function() {

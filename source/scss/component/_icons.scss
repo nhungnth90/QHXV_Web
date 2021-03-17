@@ -1,0 +1,30 @@
+/* ====================================
+   ICONS
+   ==================================== */
+
+.divider {
+	width: 535px;
+	margin: 2px auto 0;
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		border-bottom: 1px dotted #ccc;
+		margin-top: -15px;
+	}
+}
+.ic {
+	background: url('../img/qhxv_sprites.svg') no-repeat;
+	background-size: 500px 500px;
+	display: block;
+	&--emblem {
+		background: url('../img/qhxv_sprites.svg') 20px 0 no-repeat #fff;
+		width: 70px;
+		height: 30px;
+		padding: 0 20px;
+		margin: auto;
+	    z-index: 1;
+	    position: relative;
+	}
+}
