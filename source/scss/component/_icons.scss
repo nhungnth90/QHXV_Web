@@ -4,7 +4,7 @@
 
 .divider {
 	width: 535px;
-	margin: 2px auto 0;
+	margin: 5px auto 0;
 	&:after {
 		content: "";
 		display: block;
@@ -12,6 +12,10 @@
 		height: 1px;
 		border-bottom: 1px dotted #ccc;
 		margin-top: -15px;
+	}
+	&--short {
+		width: 100px;
+		margin-top: 35px;
 	}
 }
 .ic {
@@ -26,5 +30,11 @@
 		margin: auto;
 	    z-index: 1;
 	    position: relative;
+	}
+	&--laurel {
+		background-position: -100px 0;
+		width: 212px;
+		height: 70px;
+		margin: -58px auto 0;
 	}
 }

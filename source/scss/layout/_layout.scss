@@ -43,3 +43,43 @@
 .site-content {
 	padding: 30px 0;
 }
+.area-light {
+	padding: 50px 0 65px;
+	margin-bottom: 95px;
+	background: $secondary;
+	&:after {
+		display: block;
+		content: "";
+	    width: 1px;
+	    height: 130px;
+	    background: #ddd;
+	    position: absolute;
+    	left: 50%;
+	}
+	.ic--emblem {
+        background-color: $secondary;
+    }
+}
+
+// Modal
+.modal-dialog {
+	max-width: 600px;
+	margin: 5% auto;
+}
+.modal-header {
+	padding: 12px 20px;
+}
+.modal-body {
+	padding: 20px;
+}
+.modal-title {
+    font-size: 30px;
+    font-size: 3rem;
+    line-height: 37px;
+    line-height: 3.7rem;
+    text-transform: capitalize;
+}
+.close {
+    font-size: 35px;
+    font-weight: 400;
+}

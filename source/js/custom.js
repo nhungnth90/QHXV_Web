@@ -23,6 +23,13 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear'
     });
+
+    // Phat Bieu - Phong Van
+    $('.slick-interview').slick({
+        infinite: true,
+        speed: 500,
+        autoplay: true
+    });
 });
 
 
