@@ -50,11 +50,11 @@
 	&:after {
 		display: block;
 		content: "";
-	    width: 1px;
+		width: 1px;
 	    height: 130px;
-	    background: #ddd;
 	    position: absolute;
     	left: 50%;
+    	border-left: 1px dotted #ccc;
 	}
 	.ic--emblem {
         background-color: $secondary;

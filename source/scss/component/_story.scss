@@ -3,7 +3,9 @@
    ==================================== */
 
 .thumb {
-    display: block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     overflow: hidden;
     position: relative;
     background: #eee;
@@ -30,15 +32,17 @@ time {
     color: #555;
     font-weight: 300;
     * {
-        font-size: 14px;
-        font-size: 1.4rem;
+        font-size: 16px;
         display: inline;
     }
     a {
-        color: $info;
+        color: $primary;
         &:hover {
             text-decoration: underline;
         }
+    }
+    b, strong {
+        font-weight: 500;
     }
 }
 .story {

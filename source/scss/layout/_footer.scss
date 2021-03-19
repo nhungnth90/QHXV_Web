@@ -5,64 +5,36 @@
 .site-footer {
     @include clearfix();
     background: $secondary;
-    &__menu {
-        height: 42px;
-        background: #830223;
-        padding: 12px 0;
-        * {
-            font-size: 13px;
-            font-size: 1.3rem;
-            color: #fff;
-        }
-        a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-        .menu {
-            float: left;
-            a {
-                float: left;
-                margin-right: 30px;
-            }
-        }
-        .link {
-            float: right;
-            a {
-                float: left;
-                margin-left: 20px;
+    padding-bottom: 15px;
+    * {
+        line-height: 22px;
+        line-height: 2.2rem;
+        color: #555;
+    }
+    i {
+        font-size: 16px;
+        color: #888;
+        margin-right: 10px;
+    }
+    &__network {
+        @include clearfix();
+        height: 60px;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        a {
+            margin: 0 30px 0 0;
+            img {
+                max-height: 22px;
             }
         }
     }
-    &__info {
-        font-size: 13px;
-        font-size: 1.3rem;
-        line-height: 22px;
-        line-height: 2.2rem;
-        padding: 12px 0;
-        * {
-            color: #d9b8bd;
-        }
-        .info {
-            width: 55%;
-            float: left;
-            strong {
-                font-weight: 500;
-            } 
-        }
-        .contact {
-            width: 41%;
-            float: right;
-            margin-top: 22px;
-            a {
-                display: inline;
-                &:hover {
-                    color: #fff;
-                }
-            }
-            i {
-                vertical-align: text-bottom;
-                margin-right: 5px;
-            }
+    .float-right a {
+        display: inline;
+        color: $primary;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }

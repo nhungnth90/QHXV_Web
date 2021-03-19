@@ -15,13 +15,14 @@
 /* layout */
 @import "layout/layout";
 @import "layout/header";
-// @import "layout/footer";
+@import "layout/footer";
 
 /* component */
 @import "component/region";
 @import "component/story";
 @import "component/icons";
 @import "component/buttons";
+@import "component/back2top";
 
 /* pages */
 // @import "page/details";
