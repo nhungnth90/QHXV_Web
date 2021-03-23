@@ -71,6 +71,8 @@ jQuery(document).ready(function($){
 
 });
 
+ScrollReveal().reveal('.abc');
+
 
 /*--- Toggle ---*/
     // Search

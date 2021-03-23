@@ -1,0 +1,20 @@
+/* ====================================
+   CATEGORY
+   ==================================== */
+
+.timeline {
+	.story {
+		padding: 0 20px 20px;
+		background: $secondary;
+		margin: 0 20px 20px 0;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+	.story__thumb {
+		margin: 0 -20px 15px;
+	}
+	time {
+		margin-bottom: 10px;
+	}
+}

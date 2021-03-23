@@ -2,9 +2,27 @@
    HEADER
    ==================================== */
 
+.homepage {
+    .site-header  {
+        height: 730px;
+        background-position: 0 0;
+    }
+    .site-header__headline {
+        margin-top: 255px;
+        * {
+            font-weight: 800;
+        }
+        span {
+            font-size: 40px;
+            font-weight: 300;
+            display: block;
+        }
+    }
+}
 .site-header {
-    background: url('../img/qhxv_bg.png') no-repeat;
+    background: url('../img/qhxv_bg.png') 0 -205px no-repeat;
     background-size: cover;
+    height: 400px;
     &__topbar {
         @include clearfix();
         padding: 10px 30px;
@@ -23,6 +41,7 @@
                 display: inline-block;
                 a:after {
                     content: "/";
+                    color: rgba(255,255,255,.6);
                     display: inline-block;
                     padding: 0 8px 0 10px;
                 }
@@ -44,6 +63,9 @@
         margin: 20px 30px 0 0;
         .menu-item {
             display: inline-block;
+            &.selected .menu-heading {
+                text-decoration: underline;
+            }
             &:hover {
                 .mega-menu {
                     display: block;
@@ -112,7 +134,7 @@
     }
     &__headline {
         width: 900px;
-        margin: 255px auto 0;
+        margin: 140px auto 0;
         text-align: center;
         text-transform: uppercase;
         * {
@@ -121,13 +143,33 @@
             line-height: 65px;
             line-height: 6.5rem;
             color: #fff;
-            font-weight: 800;
+            font-weight: 700;
             letter-spacing: 1px;
         }
-        span {
-            font-size: 40px;
-            font-weight: 300;
-            display: block;
+    }
+}
+.breadcrumbs {
+    text-align: center;
+    margin-top: 18px;
+    a {
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        &:after {
+            content: "/";
+            color: #fff;
+            display: inline-block;
+            padding: 0 15px 0 17px;
         }
+        &:last-child:after {
+            content: none;
+        }
+        &:hover {
+            color: $primary;
+        }
+    }
+    i {
+        font-size: 18px;
     }
 }
