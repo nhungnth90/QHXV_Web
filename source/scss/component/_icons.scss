@@ -19,11 +19,11 @@
 	}
 }
 .ic {
-	background: url('../img/qhxv_sprites.svg') no-repeat;
+	background: url('../img/qhxv_sprites.svg?1.1') no-repeat;
 	background-size: 500px 500px;
 	display: block;
 	&--emblem {
-		background: url('../img/qhxv_sprites.svg') 20px 0 no-repeat #fff;
+		background: url('../img/qhxv_sprites.svg?1.1') 20px 0 no-repeat #fff;
 		width: 70px;
 		height: 30px;
 		padding: 0 20px;
@@ -44,5 +44,28 @@
 		position: absolute;
 		bottom: -30px;
     	left: -40px;
+	}
+}
+.number {
+	background: url('../img/qhxv_sprites.svg?1.1') no-repeat;
+	background-size: 500px 500px;
+	display: block;
+	width: 57px;
+	height: 60px;
+	margin: 0 0 -3px 8px;
+	&--1 {
+		background-position: -400px 0;
+	}
+	&--2 {
+		background-position: -400px -100px;
+	}
+	&--3 {
+		background-position: -400px -200px;
+	}
+	&--4 {
+		background-position: -400px -300px;
+	}
+	&--5 {
+		background-position: -400px -400px;
 	}
 }

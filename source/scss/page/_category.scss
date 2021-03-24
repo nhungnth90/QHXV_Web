@@ -3,13 +3,37 @@
    ==================================== */
 
 .timeline {
-	.story {
-		padding: 0 20px 20px;
-		background: $secondary;
-		margin: 0 20px 20px 0;
-		&:nth-child(3n) {
-			margin-right: 0;
+	margin: 20px 0 50px;
+	.page-link {
+		font-size: 16px;
+		line-height: 1.7;
+		color: #333;
+		text-align: center;
+		min-width: 35px;
+		height: 35px;
+		border: none;
+		background: #eee;
+		margin: 0 2px;
+		&:hover {
+			color: #fff;
+			background: $primary;
 		}
+	}
+	.page-item.active .page-link {
+		font-weight: 500;
+	}
+}
+.masonry {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	&-col {
+		padding-right: 20px;
+	}
+	.story {
+		background: $secondary;
+		padding: 0 20px 20px;
+		margin-bottom: 20px;
 	}
 	.story__thumb {
 		margin: 0 -20px 15px;
