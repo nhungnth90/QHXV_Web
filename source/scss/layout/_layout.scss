@@ -70,6 +70,19 @@
 	.ic--emblem {
         background-color: $secondary;
     }
+    .zone--congressman {
+        .cols-4 {
+            &:before {
+                width: 100%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: linear-gradient(to top, $secondary 15%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+    }
 }
 
 // Modal

@@ -1,0 +1,105 @@
+/* ====================================
+   CONGRESSMAN
+   ==================================== */
+
+.search-filter {
+	padding: 15px 0;
+	margin: -30px 0 50px;
+	background: $secondary;
+	.form-group {
+		margin: 0 10px 0 0;
+	}
+	.form-control {
+		width: 200px;
+		height: 40px;
+		border-color: #dfdfdf;
+		border-radius: 0;
+		font-size: 14px;
+		color: #333;
+		padding: 0 12px;
+	}
+	.btn {
+		font-size: 14px;
+		line-height: 30px;
+		width: 120px;
+		border-radius: 0;
+	}
+}
+.congressman {
+	&-filter {
+		padding: 15px 0;
+		margin-bottom: 10px;
+		background: $secondary;
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+		* {
+			font-size: 14px;
+		}
+		.form-control {
+			width: 500px;
+			height: 40px;
+			border-color: #dfdfdf;
+			border-radius: 0;
+			color: #333;
+			padding: 0 12px;
+			margin: 0 20px;
+		}
+		.form-text {
+			margin: 0;
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+	&-list {
+		li {
+			display: flex;
+			border-bottom: 1px dotted #ccc;
+		}
+		.story--congressman {
+			width: 25%;
+    		padding: 20px;
+		}
+	}
+	&-scroll {
+		width: 1187px;
+	    height: 1750px;
+	    overflow-y: scroll;
+	}
+	&-location {
+		@include clearfix();
+		padding: 13px 0 10px;
+		border-bottom: 1px dotted #ccc;
+		* {
+			display: inline;
+		}
+		.location {
+			font-size: 26px;
+			font-size: 2.6rem;
+			color: $primary;
+			vertical-align: middle;
+		}
+		.total {
+			font-size: 18px;
+			font-size: 1.8rem;
+			color: #555;
+			vertical-align: middle;
+			&:before {
+				content: "|";
+				display: inline-block;
+				padding: 0 12px 0 10px;
+			}
+		}
+		.result {
+			font-size: 14px;
+			float: right;
+			margin-top: 8px;
+			i {
+				font-size: 18px;
+				margin-left: 8px;
+				vertical-align: middle;
+			}
+		}
+	}
+}

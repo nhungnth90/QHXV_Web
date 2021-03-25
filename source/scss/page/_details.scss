@@ -3,8 +3,9 @@
    ==================================== */
 
 .details {
+    @include clearfix();
     width: 700px;
-    margin: 20px auto;
+    margin: 20px auto 30px;
     &__headline {
         font-size: 40px;
         font-size: 4rem;
@@ -15,7 +16,6 @@
     }
     &__meta {
         padding-bottom: 20px;
-        border-bottom: 1px dotted #ccc;
         span {
             margin-right: 35px;
         }
@@ -30,6 +30,7 @@
     &__social {
         padding: 10px 0;
         margin-bottom: 20px;
+        border-top: 1px dotted #ccc;
         border-bottom: 1px dotted #ccc;
     }
     &__sapo {
@@ -54,6 +55,7 @@
         }
     }
     &__content {
+        @include clearfix();
         * {
             font-size: 20px !important;
             font-size: 2rem !important;
@@ -61,12 +63,61 @@
             line-height: 3.2rem !important;
             color: #222;
         }
+        div, p {
+            margin-bottom: 25px;
+        }
+        b, strong {
+            font-weight: 600;
+        }
+        .details__img * {
+            margin: 0;
+        }
     }
     &__img {
-        width: 980px;
-        margin: 0 -140px;
-        img {
-            max-width: 100%;
+        .image {
+            width: 980px;
+            margin: 0 -140px;
+            img {
+                max-width: 100%;
+            }
+        }
+        .caption {
+            font-size: 18px !important;
+            line-height: 28px !important;
+            color: #555;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 15px;
+            &:after {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 1px;
+                border-top: 1px dotted #ccc;
+                margin: 23px auto 0;
+            }
+        }
+    }
+    &__tags {
+        margin-bottom: 20px;
+        li {
+            display: inline-block;
+            i {
+                font-size: 18px;
+                color: $primary;
+                vertical-align: middle;
+            }
+            a {
+                font-size: 14px;
+                color: #555;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: underline;
+                margin: 0 10px;
+                &:hover {
+                    color: $primary;
+                }
+            }
         }
     }
 }

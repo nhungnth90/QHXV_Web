@@ -102,7 +102,7 @@ time {
     &--congressman {
         padding-bottom: 20px;
         border-right: 1px dotted #ccc;
-        &:last-child {
+        &:nth-child(4n) {
             border: none;
         }
         .thumb {
