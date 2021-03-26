@@ -10,13 +10,16 @@
 		margin: 0 10px 0 0;
 	}
 	.form-control {
-		width: 200px;
+		width: 170px;
 		height: 40px;
 		border-color: #dfdfdf;
 		border-radius: 0;
 		font-size: 14px;
 		color: #333;
 		padding: 0 12px;
+		@include breakpoint(1280px) {
+	        width: 200px;
+	    }
 	}
 	.btn {
 		font-size: 14px;
@@ -63,22 +66,24 @@
 		}
 	}
 	&-scroll {
-		width: 1187px;
+		width: 980px;
 	    height: 1750px;
+	    margin: auto;
 	    overflow-y: scroll;
+	    @include breakpoint(1280px) {
+	        width: 1187px;
+	    }
 	}
 	&-location {
 		@include clearfix();
 		padding: 13px 0 10px;
 		border-bottom: 1px dotted #ccc;
-		* {
-			display: inline;
-		}
 		.location {
 			font-size: 26px;
 			font-size: 2.6rem;
 			color: $primary;
 			vertical-align: middle;
+			display: inline;
 		}
 		.total {
 			font-size: 18px;
@@ -94,12 +99,71 @@
 		.result {
 			font-size: 14px;
 			float: right;
-			margin-top: 8px;
+			margin: 8px 20px 0 0;
 			i {
 				font-size: 18px;
 				margin-left: 8px;
 				vertical-align: middle;
 			}
 		}
+	}
+}
+
+// Poll
+.modal-txt {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.list_vote {
+	@include clearfix();
+	li {
+		width: 100%;
+	    float: left;
+	    margin: 0 0 10px;
+	    padding: 0 0 15px;
+	    border-bottom: 1px dotted #ccc;
+	}
+	.rsV_left {
+	    width: 30%;
+	    float: left;
+	    font-size: 12px;
+	    font-weight: 500;
+	    text-transform: uppercase;
+	    padding-right: 15px;
+	}
+	.scroll_color {
+	    width: 50%;
+	    float: left;
+	    margin: 5px 0;
+	    height: 5px;
+	    background: #ccc;
+	    .bg_center_scroll {
+	    	position: relative;
+		    background: $primary;
+		    float: left;
+		    height: 5px;
+	    }
+	    .txt_number_ketqua {
+	    	display: inline-block;
+		    padding: 5px 0 0;
+		    position: absolute;
+		    right: 0;
+		    bottom: -15px;
+		    font-size: 10px;
+		    color: $primary;
+	    }
+	}
+	.rsV_right {
+	    width: 18%;
+	    float: right;
+	    font-size: 12px;
+	    color: #888;
+	    text-align: right;
+	    label {
+	    	color: #000;
+	    	font-weight: 500;
+	    }
 	}
 }

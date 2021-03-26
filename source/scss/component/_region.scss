@@ -24,8 +24,11 @@
         @include clearfix();
     }
     &--congress {
-        width: 1050px;
+        width: 730px;
         margin: -175px auto 50px;
+        @include breakpoint(1280px) {
+            width: 1050px;
+        }
         .slick-slide {
             display: flex;
             justify-content: center;
@@ -145,10 +148,10 @@
     }
     &--news {
         .slick-news .story__meta {
-            margin-right: 20px;
+            margin-right: 19px;
         }
         .slick-location .story__meta {
-            margin-left: 20px;
+            margin-left: 19px;
         }
     }
     &--congressman {
@@ -195,25 +198,35 @@
     }
     &--province {
         margin-bottom: 30px;
-
         .province-list {
             @include clearfix();
-            background: url(../img/qhxv_maskbg.png) no-repeat;
+            background: url('../img/qhxv_maskbg.png') no-repeat;
             background-size: cover;
-            width: 1187px;
+            width: 847px;
             height: 330px;
+            margin: auto;
             overflow-y: scroll;
-
+            @include breakpoint(1025px, 1280px) {
+                width: 1170px;
+            }
+            @include breakpoint(1280px) {
+                width: 1187px;
+            }
             li {
                 float: left;
                 border-right: 20px solid $secondary;
                 border-bottom: 20px solid $secondary;
-
+                &:nth-child(5n) {
+                    @include breakpoint(0, 1024px) {
+                        border-right: none;
+                    }
+                }
                 &:nth-child(7n) {
-                    border-right: none;
+                    @include breakpoint(1280px) {
+                        border-right: none;
+                    }
                 }
             }
-
             .item {
                 width: 150px;
                 height: 50px;
@@ -252,7 +265,10 @@
     &--gallery {
         margin-bottom: 30px;
         .effect-margin {
-            margin-top: -91px;
+            margin-top: -75px;
+            @include breakpoint(1280px) {
+                margin-top: -90px;
+            }
         }
         .story {
             overflow: hidden;
@@ -284,11 +300,17 @@
             }
         }
         .story {
-            height: 277px;
+            height: 226px;
             position: relative;
             margin-bottom: 20px;
+            @include breakpoint(1280px) {
+                height: 277px;
+            }
             &.large-thumb {
-                height: 368px;
+                height: 301px;
+                @include breakpoint(1280px) {
+                    height: 368px;
+                }
             }
             &__title {
                 color: #fff;
@@ -330,7 +352,10 @@
             &.small-thumb {
                 width: 48%;
                 float: left;
-                margin-right: 22px;
+                margin-right: 18px;
+                @include breakpoint(1280px) {
+                    margin-right: 22px;
+                }
                 &:last-child {
                     margin: 0;
                 }

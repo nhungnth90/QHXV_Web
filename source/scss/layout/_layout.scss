@@ -4,8 +4,12 @@
 
 .l-grid {
 	@include clearfix();
-	width: 1170px;
+    padding: 0 20px;
 	margin: auto;
+    @include breakpoint(1280px) {
+        width: 1170px;
+        padding: 0;
+    }
 }
 .cols-2 {
 	font-size: 0;

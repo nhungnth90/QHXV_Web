@@ -6,7 +6,7 @@
 @import "!framework/bootstrap-4.1.3";
 
 /* utilities */
-// @import "mixin/mixins";
+@import "mixin/mixins";
 
 /* base file */
 @import "base/custom-reboot";
@@ -28,6 +28,7 @@
 @import "page/category";
 @import "page/details";
 @import "page/congressman";
+@import "page/search-tags";
 
 /* plugins */
 @import "plugins/slick.css";

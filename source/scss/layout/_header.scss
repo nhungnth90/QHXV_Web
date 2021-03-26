@@ -20,9 +20,12 @@
     }
 }
 .site-header {
-    background: url('../img/qhxv_bg.png') 0 -205px no-repeat;
+    background: url('../img/qhxv_bg.png') 0 0 no-repeat;
     background-size: cover;
     height: 400px;
+    @include breakpoint(1280px) {
+        background-position: 0 -205px;
+    }
     &__topbar {
         @include clearfix();
         padding: 10px 30px;
@@ -85,7 +88,7 @@
             &:after {
                 content: "/";
                 display: inline-block;
-                color: #888;
+                color: rgba(255,255,255,.3);
                 padding: 0 15px 0 17px;
             }
             i {
