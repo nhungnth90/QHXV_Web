@@ -57,6 +57,9 @@
 	}
 	&-list {
 		@include clearfix();
+		a:hover {
+			color: inherit;
+		}
 		.story--congressman {
 			width: 25%;
 			padding: 20px;

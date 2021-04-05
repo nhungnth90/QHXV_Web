@@ -18,6 +18,9 @@
             display: block;
         }
     }
+    &--XII .site-header {
+        background-image: url('../img/bg/QHXII.png');
+    }
 }
 .site-header {
     background: url('../img/qhxv_bg.png') 0 0 no-repeat;
@@ -33,7 +36,7 @@
         * {
             font-size: 12px;
             font-size: 1.2rem;
-            color: rgba(255,255,255,.6);
+            color: rgba(255,255,255,.8);
         }
         .datetime {
             float: left;
