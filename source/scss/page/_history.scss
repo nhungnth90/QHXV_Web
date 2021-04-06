@@ -97,7 +97,7 @@
 	width: 50%;
 	float: left;
 	position: relative;
-	padding-right: 50px;
+	padding: 0 50px 85px 0;
 	&:after {
 		content: "";
 		display: block;
@@ -112,4 +112,54 @@
 .img-deco {
 	text-align: center;
 	margin-bottom: 20px;
+}
+.col-right {
+	width: 50%;
+	float: right;
+	.zone--info {
+		padding-left: 57px;
+		&:last-child {
+			padding-top: 50px;
+			margin-top: 50px;
+			border-top: 20px solid $secondary;
+		}
+		.slimScrollDiv {
+			padding-right: 30px;
+		}
+	}
+	.zone--source {
+		padding-left: 57px;
+	}
+}
+.timeline-key {
+	margin-left: 10px;
+	li {
+		margin: 0 !important;
+	}
+	.key {
+		padding: 0 0 16px 20px;
+		position: relative;
+		border-left: 1px dotted #ccc;
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			background: $primary;
+			border-radius: 50%;
+			position: absolute;
+		    top: 8px;
+		    left: -5px;
+		    box-shadow: 0px 0px 0px 8px #fff;
+		}
+	}
+	.date {
+		color: $primary;
+		display: inline-block;
+	}
+	ul {
+		display: inline-block;
+		vertical-align: top;
+		width: 81%;
+	}
 }

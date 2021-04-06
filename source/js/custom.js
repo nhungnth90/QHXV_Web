@@ -2,6 +2,7 @@
    Jscripts
    ==================================== */
 
+
 /*--- Slick ---*/
 $(document).ready(function() {
     // Cac Khoa Quoc Hoi
@@ -40,6 +41,12 @@ $(document).ready(function() {
         autoplay: true
     });
 });
+
+
+/*--- SlimScroll ---*/
+$('#slimScroll1').slimScroll({});
+$('#slimScroll2').slimScroll({});
+$('#slimScroll3').slimScroll({});
 
 
 /*--- Masonry ---*/
@@ -150,24 +157,3 @@ jQuery(document).ready(function($) {
     });
 
 });
-
-/*--- Toggle ---*/
-// Search
-// $('.search').on('click', function() {
-//     $('.search-form').toggleClass("active");
-// });
-
-// // Expand Comment
-// $(".expand-btn").on('click', function() {
-//     $(this).toggleClass("active");
-//     $('#expand_comment').toggleClass("active");
-// });
-
-// // Expand Reply Comment
-// $("#expand_textarea").on('click', function() {
-//     $(this).toggleClass("active");
-//     $('#confirm_btn').toggleClass("active");
-// });
-
-/*--- Sticky ---*/
-// $(".sticky-bar").sticky({ topSpacing: 0 });

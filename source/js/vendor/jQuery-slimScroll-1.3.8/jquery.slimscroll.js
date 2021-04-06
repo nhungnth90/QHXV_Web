@@ -16,13 +16,13 @@
         width : 'auto',
 
         // height in pixels of the visible scroll area
-        height : '250px',
+        height : '495px',
 
         // width in pixels of the scrollbar and rail
-        size : '7px',
+        size : '6px',
 
         // scrollbar color, accepts any hex/color value
-        color: '#000',
+        color: '#ddd',
 
         // scrollbar position - left/right
         position : 'right',
@@ -34,22 +34,22 @@
         start : 'top',
 
         // sets scrollbar opacity
-        opacity : .4,
+        opacity : 1,
 
         // enables always-on mode for the scrollbar
-        alwaysVisible : false,
+        alwaysVisible : true,
 
         // check if we should hide the scrollbar when user is hovering over
         disableFadeOut : false,
 
         // sets visibility of the rail
-        railVisible : false,
+        railVisible : true,
 
         // sets rail color
-        railColor : '#333',
+        railColor : '#f7f7f7',
 
         // sets rail opacity
-        railOpacity : .2,
+        railOpacity : 1,
 
         // whether  we should use jQuery UI Draggable to enable bar dragging
         railDraggable : true,
