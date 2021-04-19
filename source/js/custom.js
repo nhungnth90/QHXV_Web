@@ -47,6 +47,13 @@ $(document).ready(function() {
 $('#slimScroll1').slimScroll({});
 $('#slimScroll2').slimScroll({});
 $('#slimScroll3').slimScroll({});
+$('#slimScroll_dist1').slimScroll({
+    alwaysVisible : false
+});
+$('#slimScroll_dist2').slimScroll({
+    height: 315,
+    alwaysVisible : false
+});
 
 
 /*--- Masonry ---*/
